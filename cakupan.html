@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cakupan Wilayah — GhoulNet</title>
+<meta name="description" content="Daftar provinsi, kota, dan kabupaten yang dilayani GhoulNet. Cari wilayah Anda.">
+<meta name="theme-color" content="#06070f">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@900&text=%E6%9D%B1%E4%BA%AC%E5%96%B0%E7%A8%AE&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="cakupan">
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="kanji-sm">地図</span>
+      <h1 data-reveal="wipe">Daftar saluran wilayah</h1>
+      <p class="lead">Ketik nama provinsi, kota, atau kabupaten untuk memastikan GhoulNet sudah ada di tempat Anda.</p>
+      <div class="search" style="margin-top:28px">
+        <span class="sr-only"><label for="q">Cari wilayah</label></span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input class="input" id="q" type="search" placeholder="Cari wilayah, contoh: Bandung" autocomplete="off">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:8px">
+    <div class="wrap">
+      <p class="cov-meta" id="covMeta" aria-live="polite"></p>
+      <div class="cov-grid" id="cov"></div>
+      <div class="empty card" id="covEmpty">
+        <p>Wilayah tidak ditemukan. Cek ejaan, atau <a href="kontak.html" style="color:var(--sky);text-decoration:underline">hubungi kami</a> untuk menanyakan rencana perluasan jaringan.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

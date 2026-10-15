@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Produk — GhoulNet</title>
+<meta name="description" content="Daftar paket internet GhoulNet: ION, Satu Fiber, dan WiFi Rumah. Hitung kebutuhan kecepatan Anda.">
+<meta name="theme-color" content="#06070f">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@900&text=%E6%9D%B1%E4%BA%AC%E5%96%B0%E7%A8%AE&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="produk">
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="kanji-sm">喰種</span>
+      <h1 data-reveal="wipe">Pilih paket Anda</h1>
+      <p class="lead">Semua paket tanpa batas kuota. Bandingkan kecepatan dan harga, atau biarkan kalkulator di bawah menyarankan yang paling cocok.</p>
+      <div class="tabs" role="tablist" aria-label="Filter penyedia" style="margin-top:28px">
+        <button class="tab" role="tab" aria-selected="true" data-brand="all">Semua</button>
+        <button class="tab" role="tab" aria-selected="false" data-brand="ion">ION</button>
+        <button class="tab" role="tab" aria-selected="false" data-brand="satu">Satu</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap" id="series"></div>
+
+  <div class="wrap"><p class="note">Harga dan promo dapat berubah sewaktu-waktu. Ketersediaan bergantung pada wilayah pemasangan.</p></div>
+
+  <!-- KALKULATOR -->
+  <section class="section" id="kalkulator">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title" data-reveal="wipe">Berapa Mbps yang Anda butuhkan?</h2>
+        <p class="sec-sub" data-reveal="up">Geser jumlah perangkat dan centang kebiasaan online di rumah. Hasilnya perkiraan, bukan angka pasti.</p>
+      </div>
+      <div class="card calc" data-reveal="zoom">
+        <div class="calc-in">
+          <div class="field">
+            <label for="devices">Jumlah perangkat yang terhubung</label>
+            <div class="range-val" id="devVal">4</div>
+            <input class="range" id="devices" type="range" min="1" max="15" value="4">
+          </div>
+          <div class="checks">
+            <label class="check"><input type="checkbox" value="8"> Streaming film HD</label>
+            <label class="check"><input type="checkbox" value="25"> Streaming 4K</label>
+            <label class="check"><input type="checkbox" value="10"> Game online</label>
+            <label class="check"><input type="checkbox" value="10"> Rapat video / kerja dari rumah</label>
+          </div>
+        </div>
+        <div class="calc-out" aria-live="polite">
+          <span>Perkiraan kebutuhan</span>
+          <div class="big"><span id="need">12</span> Mbps</div>
+          <span>Paket yang kami sarankan</span>
+          <h3 id="recName" style="font-size:22px"></h3>
+          <p id="recPrice" style="color:var(--muted)"></p>
+          <a class="btn btn-primary" id="recGo" href="kontak.html" style="align-self:flex-start;margin-top:8px">Pilih paket ini</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kontak — GhoulNet</title>
+<meta name="description" content="Hubungi GhoulNet Home Care, ajukan pemasangan, dan baca pertanyaan yang sering diajukan.">
+<meta name="theme-color" content="#06070f">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@900&text=%E6%9D%B1%E4%BA%AC%E5%96%B0%E7%A8%AE&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="kontak">
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="kanji-sm">連絡</span>
+      <h1 data-reveal="wipe">Pasang atau tanya</h1>
+      <p class="lead">Isi formulir dan kami lanjutkan lewat WhatsApp. Untuk gangguan layanan, langsung hubungi hotline 24 jam.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:24px">
+    <div class="wrap contact-grid">
+
+      <form class="card form" id="contactForm" novalidate data-reveal="up">
+        <div class="field"><label for="nama">Nama lengkap</label>
+          <input class="input" id="nama" name="nama" autocomplete="name" aria-describedby="e-nama">
+          <div class="err" id="e-nama"></div></div>
+        <div class="field"><label for="hp">Nomor WhatsApp</label>
+          <input class="input" id="hp" name="hp" type="tel" inputmode="tel" autocomplete="tel" placeholder="085269922524" aria-describedby="e-hp">
+          <div class="err" id="e-hp"></div></div>
+        <div class="field"><label for="kotaIn">Kota / kabupaten pemasangan</label>
+          <input class="input" id="kotaIn" name="kota" autocomplete="address-level2" aria-describedby="e-kota">
+          <div class="err" id="e-kota"></div></div>
+        <div class="field"><label for="paket">Paket yang diminati</label>
+          <select class="input" id="paket" name="paket"></select></div>
+        <div class="field"><label for="pesan">Catatan (opsional)</label>
+          <textarea class="input" id="pesan" name="pesan" placeholder="Contoh: rumah dua lantai, butuh jaringan ke lantai atas"></textarea></div>
+        <button class="btn btn-primary btn-block" type="submit">Kirim lewat WhatsApp</button>
+      </form>
+
+      <div class="info" data-stagger>
+        <div class="card info-card"><div class="info-ic"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></div>
+          <div><h3>Contact Center</h3><a href="tel:1500933">1500933</a><p>Hotline 24 jam</p></div></div>
+        <div class="card info-card"><div class="info-ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+          <div><h3>Email Home Care</h3><a href="mailto:home_care@ghoulnetnetworks.com">home_care@ghoulnetnetworks.com</a></div></div>
+        <div class="card info-card"><div class="info-ic"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.200 7-11.500A7 7 0 0 0 5 9.500C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg></div>
+          <div><h3>Kantor pusat</h3><p>MidPlaza 2, 8th Floor<br>Jl. Jendral Sudirman Kav 10-11<br>Jakarta 10220, Indonesia</p></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head"><h2 class="sec-title" data-reveal="wipe">Pertanyaan yang sering diajukan</h2></div>
+      <div class="faq" data-reveal="up">
+        <details open><summary>Berapa lama proses pemasangan?</summary><p>Setelah formulir diterima, tim kami menghubungi Anda untuk konfirmasi. Teknisi biasanya datang dalam beberapa hari kerja, tergantung antrean dan lokasi.</p></details>
+        <details><summary>Apakah benar tanpa batas kuota?</summary><p>Paket bertanda tanpa batas kuota bisa dipakai sepuasnya setiap bulan. Syarat lengkap tercantum pada Syarat dan Ketentuan.</p></details>
+        <details><summary>Bagaimana cara mengecek apakah wilayah saya terjangkau?</summary><p>Gunakan pengecek wilayah di beranda, atau cari nama kota Anda di halaman Cakupan. Jika belum ada, hubungi kami untuk menanyakan rencana perluasan.</p></details>
+        <details><summary>Ke mana melapor jika internet bermasalah?</summary><p>Hubungi 1500933 kapan saja, atau kirim email ke home_care@ghoulnetnetworks.com dengan menyebut nama dan alamat pemasangan.</p></details>
+        <details><summary>Bisakah saya ganti paket setelah berlangganan?</summary><p>Bisa. Hubungi Contact Center untuk menaikkan atau menurunkan kecepatan. Perubahan berlaku pada siklus tagihan berikutnya.</p></details>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/script.js"></script>
+<script>
+(function () {
+  var NOMOR_ADMIN = "6285269922524"; // awalan 62, tanpa 0 di depan
+
+  function setErr(id, teks) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = teks;
+  }
+
+  document.addEventListener("submit", function (e) {
+    if (e.target.id !== "contactForm") return;
+    e.preventDefault();
+    e.stopImmediatePropagation();
+
+    var nama  = document.getElementById("nama").value.trim();
+    var hp    = document.getElementById("hp").value.trim();
+    var kota  = document.getElementById("kotaIn").value.trim();
+    var sel   = document.getElementById("paket");
+    var paket = sel.selectedOptions.length ? sel.selectedOptions[0].text : "";
+    var pesan = document.getElementById("pesan").value.trim();
+
+    var hpOk = /^[0-9+\s-]{9,15}$/.test(hp);
+    setErr("e-nama", nama ? "" : "Nama wajib diisi");
+    setErr("e-hp",   hpOk ? "" : "Nomor WhatsApp tidak valid");
+    setErr("e-kota", kota ? "" : "Kota wajib diisi");
+    if (!nama || !hpOk || !kota) return;
+
+    var teks =
+      "Halo GhoulNet, saya ingin mengajukan pemasangan.\n\n" +
+      "Nama: " + nama + "\n" +
+      "WhatsApp: " + hp + "\n" +
+      "Kota: " + kota + "\n" +
+      "Paket: " + paket +
+      (pesan ? "\nCatatan: " + pesan : "");
+
+          // Buka langsung aplikasi WhatsApp (bukan website)
+    var query = "phone=" + NOMOR_ADMIN + "&text=" + encodeURIComponent(teks);
+    window.location.href = "whatsapp://send?" + query;
+  }, true);
+})();
+</script>
+</body>
+</html>
+</body>
+</html>

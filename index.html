@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GhoulNet — Bebas Internet Sepuasnya</title>
+<meta name="description" content="Internet rumah tanpa batas kuota. Cek ketersediaan di wilayah Anda dan pilih paket GhoulNet.">
+<meta name="theme-color" content="#06070f">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@900&text=%E6%9D%B1%E4%BA%AC%E5%96%B0%E7%A8%AE&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-video" id="heroVideo" aria-hidden="true"></div>
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="vctl" id="vctl" hidden></div>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hashtag">#PakeGhoulNet</p>
+        <div class="kanji" data-parallax aria-hidden="true">東京喰種</div>
+        <p class="slogan">Tenang, Senang, Menang</p>
+        <h1 class="h1">Bebas internet sepuasnya</h1>
+        <p class="lead">Streaming, game, dan kerja dari rumah tanpa takut kuota habis. Cek apakah layanan sudah sampai di tempat Anda, lalu pilih paket yang pas.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="produk.html">Lihat paket</a>
+          <a class="btn btn-ghost" href="kontak.html">Hubungi kami</a>
+        </div>
+      </div>
+
+      <form class="card checker" id="checker" novalidate>
+        <h2>Cek layanan di wilayah Anda</h2>
+        <p class="sub">Pilih lokasi pemasangan untuk melihat ketersediaan.</p>
+        <div class="field"><label for="prov">Provinsi</label>
+          <select class="input" id="prov"><option value="">Pilih provinsi</option></select></div>
+        <div class="field"><label for="kota">Kota / Kabupaten</label>
+          <select class="input" id="kota" disabled><option value="">Pilih kota atau kabupaten</option></select></div>
+        <div class="split">
+          <button class="btn btn-primary" type="submit">Cari</button>
+          <button class="btn btn-ghost" type="button" id="locate">Lokasi saya</button>
+        </div>
+        <div class="result" id="result" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+
+    <div class="wrap">
+      <div class="stats" data-stagger>
+        <div class="stat"><b data-count="136">0</b><span>Kota/Kabupaten</span></div>
+        <div class="stat"><b data-count="3503">0</b><span>Kelurahan</span></div>
+        <div class="stat"><b data-count="9758">0</b><span>Gedung/Area</span></div>
+        <div class="stat"><b data-count="3931282">0</b><span>Homepass</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="m-track" data-scrollx>
+      <span>Tenang</span><span>Senang</span><span>Menang</span><span>Tenang</span><span>Senang</span><span>Menang</span>
+      <span>Tenang</span><span>Senang</span><span>Menang</span><span>Tenang</span><span>Senang</span><span>Menang</span>
+    </div>
+  </div>
+
+  <!-- PRODUK -->
+  <section class="section" id="produk">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title" data-reveal="wipe">Wajib ada di rumah Anda</h2>
+        <p class="sec-sub" data-reveal="up">Empat pilihan paket untuk setiap kebutuhan, dari keluarga kecil sampai rumah dengan banyak perangkat.</p>
+      </div>
+      <div class="grid-4" id="featured" data-stagger></div>
+    </div>
+  </section>
+
+  <!-- KENAPA -->
+  <section class="section">
+    <div class="wrap why">
+      <div class="sec-head" style="margin:0">
+        <h2 class="sec-title" data-reveal="wipe">Semua paket layak untuk Anda</h2>
+        <p class="sec-sub" data-reveal="up">Kami fokus pada hal yang paling terasa sehari-hari: koneksi yang tidak putus-putus dan bantuan yang cepat datang.</p>
+      </div>
+      <div class="why-list" data-stagger>
+        <div class="why-item"><div class="why-ic"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></div>
+          <div><h3>Tanpa batas kuota</h3><p>Pakai sepuasnya untuk semua perangkat di rumah tanpa pembatasan kecepatan di tengah bulan.</p></div></div>
+        <div class="why-item"><div class="why-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <div><h3>Bantuan 24 jam</h3><p>Hotline 1500933 siap menerima laporan gangguan kapan pun, termasuk malam dan akhir pekan.</p></div></div>
+        <div class="why-item"><div class="why-ic"><svg viewBox="0 0 24 24"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg></div>
+          <div><h3>Jangkauan luas</h3><p>Tersedia di 136 kota dan kabupaten, dari Sumatera sampai Nusa Tenggara.</p></div></div>
+        <div class="why-item"><div class="why-ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div>
+          <div><h3>Teknisi resmi</h3><p>Pemasangan dan perbaikan dilakukan teknisi terlatih, tanpa biaya tersembunyi.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGKAH -->
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head"><h2 class="sec-title" data-reveal="wipe">Pasang dalam tiga langkah</h2></div>
+      <div class="steps" data-stagger>
+        <div class="card step"><h3>Cek wilayah</h3><p>Pilih provinsi dan kota Anda di bagian atas halaman untuk memastikan layanan tersedia.</p></div>
+        <div class="card step"><h3>Pilih paket</h3><p>Bingung memilih? Pakai kalkulator kebutuhan di halaman Produk untuk mendapat rekomendasi.</p></div>
+        <div class="card step"><h3>Teknisi datang</h3><p>Isi formulir, tim kami menghubungi lewat WhatsApp dan menjadwalkan pemasangan.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="padding-top:24px">
+    <div class="wrap">
+      <div class="band" data-reveal="zoom">
+        <h2>Siap bergabung dengan jutaan Warrior?</h2>
+        <a class="btn btn-primary" href="kontak.html">Pasang sekarang</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
